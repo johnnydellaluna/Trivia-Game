@@ -1,10 +1,12 @@
 window.onload = function() {
-	$("#displaytime").text("Time remaining: 50");
-		var time = 50;
-		var count = setInterval(function(){
-			time--;
-			$("#display").text("Time remaining: " + time, 50000);
-
-	})
-
+	var time = 60;
+    $("#displaytime").text("Time remaining: " + time);
+        var count = setTimeout(function(){
+            time--;
+            $("#displaytime").text("Time remaining: " + time)
+		}, 1000);
+    
 }
+
+// Program correct and incorrect answer lists.
+// Mark correct answers as such and write to results screen. Same for incorrect answers.
